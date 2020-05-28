@@ -5,6 +5,7 @@ var sass = require('gulp-sass');
 var fileinclude = require('gulp-file-include');
 var browserSync = require('browser-sync').create();
 var reload = browserSync.reload;
+var imagemin = require('gulp-imagemin');
 
 
 
@@ -38,4 +39,12 @@ gulp.task('default', function() {
     });
     gulp.watch('./dev/sass/*.scss' ,['sass']).on('change',reload);
     gulp.watch(['./dev/*.html' ,'./dev/**/*.html'] ,['fileinclude']).on('change',reload);
+});
+
+
+//壓圖
+gulp.task('miniimg',function(){
+  gulp.src('./dev/image/*')
+  .pipe(imagemin())
+  .pipe(gulp.dest('dest/images'))
 });
