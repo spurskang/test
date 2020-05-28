@@ -1,0 +1,12 @@
+$fontSize: 20px;
+$num: 30;
+
+body{
+  font-size: $fontSize;
+  margin: $num + 30px;
+}
+
+h1{
+  font-size: $fontSize + 70px;
+  color: yellow;
+}
