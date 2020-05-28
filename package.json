@@ -1,11 +1,27 @@
 {
-  "name": "ed101g4",
+  "name": "autopackage",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "hello": "gulp hello"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "keywords": [],
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^4.3.0",
+    "jquery": "^3.5.1"
+  },
+  "description": "",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp-concat": "^2.6.1",
+    "gulp-file-include": "^2.2.2",
+    "gulp-sass": "^4.1.0",
+    "node-sass": "^4.14.1"
+  }
 }
+
